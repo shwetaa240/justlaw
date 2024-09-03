@@ -1,0 +1,401 @@
+<html>
+<head>
+     
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>contact form</title>
+</head>
+<body >   
+ <!-- navbar -->
+   <!--  <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">
+       JustLAW</label>      
+       <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Practice Area</a></li>
+         <li><a href="cform2.html">Contact</a></li>
+        <li><a href="#">About</a></li>
+       
+      </ul>
+    </nav> -->
+    <!-- nav closed -->   
+
+<form id="form" class="container-sm" >
+  <br>
+  <h1>Contact form</h1>
+  <br>
+  <div class="row mb-3">
+     <div class="col">
+   Name
+ </div>
+  <div class="col-sm-4">
+    <input type="text" class="form-control" id="nm" placeholder="First name" aria-label="First name" name="TCEfname">
+  </div>
+  <div class="col-sm-4">
+    <input type="text" class="form-control" id="nm2" placeholder="Last name" aria-label="Last name" name="TCElname">
+  </div>
+  <div class="col"> </div>
+   
+</div>
+
+<div class="row mb-3"> 
+   <div class="col">Gender
+   </div>
+  <div class="col">
+  <input type="radio" id="gen" name="gen">Male 
+</div>
+  <div class="col">
+  <input  type="radio" id="gen" name="gen" >Female 
+</div>
+<div class="col">
+</div>
+<div class="col">
+</div>
+<div class="col">
+</div>
+
+</div>
+
+<div class="row mb-3">
+   <div class="col">
+    Email
+   </div>
+ <div class="col-sm-4">
+  <input type="email" id="email" class="form-control" > 
+ </div>
+ <div class="col"> </div>
+   <div class="col"> </div>
+   <div class="col"> </div>
+   
+</div>
+  <div class="row mb-3">
+    <div class="col">
+      Phone Number
+   </div>
+   <div class="col-sm-4">
+    <input type="number" id="num" class="form-control">
+   </div>
+   <div class="col-sm-4"> </div>
+    <div class="col-sm-2"> </div>
+   </div>
+  <div class="row mb-3">
+     <div class="col">Message Subject
+     </div>
+<div class="col">
+<select id="sub" onchange="message()" class="form-control size" >
+    <option>Other</option>
+    <option>Buisness/Corporate</option>
+    <option>Criminal charges</option>
+    <option>Family</option>
+  </select> 
+</div>
+   <div class="col"> </div>
+   <div class="col"> </div>
+   <div class="col"> </div>
+   <div class="col"> </div>
+   </div>
+
+<div class="row mb-3">
+ <div class="col">
+ Message 
+</div>
+  <div class="col">
+<textarea rows="3" id="mess" class="form-control size" ></textarea>
+</div>
+  <div class="col"> </div>
+  <div class="col"> </div>
+  <div class="col"> </div>
+  <div class="col"> </div>
+</div>                       
+<br>                            
+  <a href="index.html" class="btn btn-outline-* shw" style="text-decoration: none;">Back</a>
+  <button class="btn btn-outline-* shw" onclick="check()">Submit</button>
+    <br><br>
+      <div id="disp" style="font-size:21px; font-family:avenir; color:rebeccapurple; padding-left: 20px;">Kindly fill the above form with valid details.</div>
+      <br><br><br><br>
+
+  </form>
+
+<footer>
+  <div id="foot">
+  <br><br>
+  <center>
+    <div>
+   <h4 style="color:white;font-weight: 100;"> Follow us on:</h4>
+  <i id="ic" class="fa-brands fa-twitter social" ></i>
+  <i id="ic" class="fa-brands fa-facebook-f social" style="margin-left: 10px;margin-right: 10px;"></i>
+  <i id="ic" class="fa-brands fa-linkedin-in social"></i>
+  </div>
+    
+   <div id="footd"> 134/450 M-Block, Galaxy Building &bull; New Delhi &bull; India
+    <br>
+    <i id="icc" class="fa-solid fa-phone"></i> Call us:+919776900500 &emsp;&emsp; 
+     <i id="icc" class="fa-solid fa-envelope"></i> Email us: rahuldesailaw@gmail.com
+    <br><br>
+    <h5 style="font-weight: 300;font-size:14px;">Terms of Service | Privacy Policy</h5>
+   <span style="color:gray;">Copyright&copy; &ensp; Made with <3 by Shweta</span>
+  <br><br><br>
+  </center>
+  </div>
+</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+</script>
+
+<script>
+    var x,y,a,p,q,r;
+p="I want to take divorce/make will/..";
+q="I am facing issues in Buisness..";
+r="I have been accussed of ..";
+   function message()
+   {  
+    a=document.getElementById('sub').value;
+     if(a=="Criminal charges")
+     {
+    document.getElementById('mess').value=r;
+     }
+   else if(a=="Family")
+    {
+    document.getElementById('mess').value=p; 
+    }
+   else if(a=="Buisness/Corporate")
+    {
+  document.getElementById('mess').value=q;
+    }
+   }
+function submit()
+  { 
+    document.write("<div style='margin-top:50px;margin-left:30px;font-size:25px;color:rebeccapurple;'> Submitted successfully.Thanks for contacting.You will be reverted back within 48hrs.</div>");
+  }
+
+  // function submit()
+  // { 
+  //  document.getElementById('disp').innerHTML="Submitted successfully.Thanks for contacting.You will be reverted back within 48hrs.";
+  // }
+
+  function check()
+  { 
+    x=document.getElementById('nm').value;
+y=document.getElementById('nm2').value;
+var phn=document.getElementById('num').value;
+ var regex=/^[a-zA-Z\s]+$/;
+ var reg=/^\d{10}$/;
+    if(!regex.test(x) || !regex.test(y) )
+    {
+    alert("Enter correct name");
+    
+    }
+  else if(!reg.test(phn))
+ {
+  alert("invalid phone number");
+ }
+    else
+    {
+      submit();
+    }
+  }
+  </script>
+</body>
+
+<style type="text/css">
+
+/* nav */
+/*nav
+{
+  background: black;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 22px;
+  line-height: 35px;
+  padding: 10px 50px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+ padding-top: 8px;
+  margin-right: 20px;
+}
+nav ul li{
+  font-family:"Avenir";
+  display: inline-block;
+}
+nav ul li a{
+  color: white;
+  font-size: 15px;
+  padding-right:20px;
+  text-transform: uppercase;
+}
+a:hover{
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: steelblue;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 15px;
+  color: white;
+  float: right;
+  padding-top:10px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 20px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 15px;
+  }
+}
+/* responsive */
+/*@media (max-width: 858px)   
+{
+  .checkbtn
+  {
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 35px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li
+  {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a
+  {
+    font-size: 15px;
+  }
+
+  a:hover
+  {
+    background: none;
+     color:#0082e6;
+  }
+  #check:checked ~ ul
+  {
+    left: 0;
+  }
+}*/
+
+
+/*form css*/
+   .size
+  {
+    width: 160px;
+  }
+  body
+  { 
+    background-image:url("webb.png");
+    background-repeat:no-repeat;
+    background-size:100%;
+    margin:0;
+  }
+  #form
+  {
+    font-size:15px;
+  }
+  .shw
+  {
+    color:rebeccapurple;
+    border-color: rebeccapurple;
+  }
+  .shw:hover
+  {
+    color:white;
+    background-color:rebeccapurple;
+    border-color: rebeccapurple;
+  }  
+  h1
+  { 
+  	font-family:"Verdana cursive";
+    font-style: italic;
+    color:darkslateblue;
+    font-size:42;
+  }
+  #foot
+ {
+  display:flex;
+  width:100%;
+  background-color: #C0C0C0;
+  padding-right:30%;
+  padding-left:30%;
+  padding-top:40px;
+  text-align: center;
+ }
+
+ #ic
+ {
+  display: inline-block;
+  color:#C0C0C0;
+  margin-top: 3px;
+  margin-bottom:20px;
+/*  padding-right:10px;*/
+/*  padding-left:10px;*/
+ }
+
+/* creating circle icons */
+ .social
+{                  
+    background:white;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+#icc
+{ 
+  font-size:13px;
+  display:inline-block;
+  color:white;
+}
+#footd
+{
+ text-align: center;
+ color:white;
+}
+i:hover
+{
+ text-shadow:4px 4px 3px gray;
+}
+/*
+#showmsg
+{
+  background-image:url("webb.png");
+  background-size:100%;
+  background-repeat:no-repeat;
+}*/
+</style>
+</html>
